@@ -1,0 +1,75 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.container{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header{
+	width: 100%;
+	height: 100vh;
+	background-image: url('../fondo.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+#logo{
+	height: auto;
+	width: 40%;
+	position: absolute;
+	top: 40%;
+    left: 30%;
+}
+.nav{
+	display: block;
+}
+.nav ul{
+	
+}
+.nav ul li{
+	display: inline-block;
+	padding: 10px;
+}
+.nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+.nav ul li a:hover{
+	text-decoration: underline;
+}
+.ulcontainer{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	text-align: center;
+	transform: translateY(1600%);
+}
+.section{
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 800px;
+	background-color: black;
+	border: 2px white solid;
+}
+
+h1{
+	color: white;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1024px) {
+    #logo{
+    	position: static;
+    	width: 100%;
+    	transform: translateY(100%);
+    }
+    .ulcontainer{
+    	transform: translateY(700%);
+    }
+}
