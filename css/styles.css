@@ -53,14 +53,68 @@
 	display: block;
 	text-align: center;
 	width: 100%;
-	height: 800px;
-	background-color: black;
+	height: 400px;
+	background-color: green;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.nosotros{
+	background-color: gray;
+}
+.servicios{
+	background-color: red;
+	padding-top: 70px;
+}
+.contacto{
+	background-color: blue;
 }
 
-h1{
-	color: white;
+.title{
+  font-weight: 300;
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-
+.title::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 1px solid white;
+}
+.textcontainer{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.centercontent{
+	margin: auto;
+	text-align: center;
+}
+.fa-arrow-circle-down{
+	font-size: 30px;
+}
+.arrow{
+	position: absolute;
+	bottom: 10px;
+}
+.boxParent{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.boxChild{
+	margin: 15px;
+	width: 20%;
+}
 /* Media queries */
 
 @media only screen and (max-width: 1024px) {
